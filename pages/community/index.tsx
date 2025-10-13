@@ -1,5 +1,14 @@
+import withLayoutBasic from "@/libs/components/layouts/LayoutBasic";
+import { useState } from "react";
+
 const Community = () => {
-   return <div> COMMUNITY </div>
+   console.log("COMMUNITY COMPONENT - PAGES ROUTER");
+   const [title, setTitle] = useState<string>("hello");
+   return (
+      <div>
+         COMMUNITY    
+      </div>
+   )
 };
 
-export default Community;
+export default withLayoutBasic(Community);
