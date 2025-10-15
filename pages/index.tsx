@@ -6,7 +6,7 @@ const Home: NextPage = () => {
   return ( 
     
     <Stack>
-      <Stack flexDirection={"column"}>
+      <Stack className={"home-page"}>
           <Stack>
               <Stack className='container'>Popular Properties</Stack>
           </Stack>
@@ -23,9 +23,4 @@ const Home: NextPage = () => {
 }
 
 export default withLayoutMain(Home);
-
-
-/** 
- * 1. routing system
- * 2. 
- */
+ 
