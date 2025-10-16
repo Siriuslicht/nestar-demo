@@ -1,4 +1,5 @@
 import { Box, Stack } from "@mui/material";
+import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 
 const HeaderFilter = function() {
    return (
@@ -6,12 +7,15 @@ const HeaderFilter = function() {
          <Stack className={"select-box"}>
             <Box component={"div"} className={"box on"}>
                <span>Location</span>
+              <ExpandMoreIcon />
              </Box>
             <Box className={"box"}>
                <span>Property type</span>
+              <ExpandMoreIcon />
             </Box>
             <Box className={"box"}>
-               <span>7 Rooms</span>
+              <span>7 Rooms</span>
+              <ExpandMoreIcon />
             </Box>
          </Stack>
          <Stack className={"search-box-other"}>

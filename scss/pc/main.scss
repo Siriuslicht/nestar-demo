@@ -356,7 +356,6 @@
          }
       }
    }
-
    #footer {
       position: relative;
       padding: 60px 0px 18px 0px;
@@ -471,7 +470,7 @@
                   justify-content: space-between;
                   div {
                      display: flex;
-                     flex-direction: row;
+                     flex-direction: column;
                      strong {
                         margin-bottom: 3px;
                         color: #fff;

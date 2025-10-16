@@ -15,14 +15,14 @@ const Top = () => {
                          <Link href={"/"}>
                               <div>Home</div>
                          </Link>
-                         <Link href={"/properties"}>
+                         <Link href={"/property"}>
                               <div>Properties</div>
                          </Link>
                          <Link href={"/agents"}>
                               <div>Agents</div>
                          </Link>
                          <Link href={"/community?articleCategory=FREE"}>
-                              <div>Home</div>
+                              <div>Community</div>
                          </Link>
 
                          <Link href={"/cs"}>
