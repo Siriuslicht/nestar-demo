@@ -6,24 +6,31 @@ import TopAgents from "@/libs/components/homepage/TopAgents";
 import withLayoutMain from "@/libs/components/layouts/LayoutHome";
 import { Box, Container, Stack } from "@mui/material"
 import { NextPage } from "next";
-import "swiper/css";
+import useDeviceDetect from "@/libs/hooks/useDeviceDetect";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
+import "swiper/css";
 
 const Home: NextPage = () => {
-  return ( 
-    
-    <Stack>
-      <Stack className={"home-page"}>
-          <TrendProperties />
-          <PopularProperties />
-          <Advertisement />
-          <TopProperties />
-          <TopAgents />
+  const device = useDeviceDetect();
+  if(device === "mobile") {
+    return <Stack>HOMEPAGE MOBILE</Stack>
+  } else {
+      return ( 
+        // DEVICE: MOBILE &   PS
+        <Stack>
+          <Stack className={"home-page"}>
+              <TrendProperties />
+              <PopularProperties />
+              <Advertisement />
+              <TopProperties />
+              <TopAgents />
+            </Stack>
         </Stack>
-    </Stack>
+    
+      ); 
+  }
 
-  );
 }
 
 export default withLayoutMain(Home);
